@@ -15,9 +15,8 @@ body {
 }
 
 .slider {
-  /* margin: 2rem auto; */
   position: relative;
-  width: 60%;
+  width: 800px;
   overflow: hidden;
   background-color: rgb(255, 133, 133);
   margin-bottom: 20px;
@@ -29,42 +28,82 @@ body {
 }
 
 .pictures img {
-  height: 490px;
+  height: 450px;
   width: 100%;
   transition: all 0.5s ease;
   margin-bottom: 2rem;
 }
 
-.pictures input {
+.slider input {
   display: none;
 }
+
+#img1:checked ~ .pictures .m1 {
+  transform: translate(0%);
+}
+#img2:checked ~ .pictures .m2 {
+  transform: translate(-100%);
+}
+#img3:checked ~ .pictures .m3 {
+  transform: translate(-200%);
+}
+#img4:checked ~ .pictures .m4 {
+  transform: translate(-300%);
+}
+
 
 
 .info {
   background-color: rgb(149, 255, 149);
-  width: 100%;
+  width: 800px;
   display: flex;
   padding: 0 1rem 1rem;
+  min-height: 7.5rem;
+  position: relative;
 }
 
 .slider-text {
-  width: 75%;
+  width: 100%;
+  overflow: hidden;
   background-color: rgb(141, 124, 252);
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem 1rem 1rem;
 }
 
-.text {
-  font-size: 1.6rem;
+.slider-text p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-left: 1rem;
+  color: aliceblue;
+  font-weight: 600;
+  font-size: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-shadow: 0.2em 0.1em #2f363c;
+}
+
+.slider-text div {
+  flex-shrink: 0;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+
+#img1:checked ~ .info .slider-text div {
+  transform: translate(0);
+}
+#img2:checked ~ .info .slider-text div {
+  transform: translate(-100%);
+}
+#img3:checked ~ .info .slider-text div {
+  transform: translate(-200%);
+}
+#img4:checked ~ .info .slider-text div {
+  transform: translate(-300%);
 }
 
 .switch-panel {
   background-color: rgb(255, 238, 107);
-  width: 25%;
+  width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,16 +124,9 @@ body {
   background: #fff;
 }
 
-#img1:checked ~ .m1 {
-  transform: translate(0%);
-}
-#img2:checked ~ .m2 {
-  transform: translate(-100%);
-}
-#img3:checked ~ .m3 {
-  transform: translate(-200%);
-}
-#img4:checked ~ .m4 {
-  transform: translate(-300%);
-}
+
+
+
+
+
 

@@ -9,30 +9,37 @@
 </head>
 <body>
     <div class="slider">
+      <input type="radio" name="meme" id="img1" checked>
+      <input type="radio" name="meme" id="img2">
+      <input type="radio" name="meme" id="img3">
+      <input type="radio" name="meme" id="img4">
       <section class="pictures">
-        <input type="radio" name="meme" id="img1" checked>
-        <input type="radio" name="meme" id="img2">
-        <input type="radio" name="meme" id="img3">
-        <input type="radio" name="meme" id="img4">
-        
-        <img src="./assets/1.jpg" alt="meme1" class="m1">
-        <img src="./assets/2.jpg" alt="meme2" class="m2">
-        <img src="./assets/3.jpg" alt="meme3" class="m3">
-        <img src="./assets/4.jpg" alt="meme4" class="m4">
+        <img src="./assets/1.png" alt="meme1" class="m1">
+        <img src="./assets/2.png" alt="meme2" class="m2">
+        <img src="./assets/3.png" alt="meme3" class="m3">
+        <img src="./assets/4.png" alt="meme4" class="m4">
       </section>
 
       <section class="info">
-        <div class="slider-text">
-          <div class="text text1">some meme text 1</div>
-          <div class="text text2">some meme text 2</div>
-          <div class="text text3">some meme text 3</div>
-          <div class="text text4">some meme text 4</div>
+        <div class="slider-text">     
+          <div class="div1"><p class="text1">some meme text 1</p></div>
+          <div class="div2"><p class="text2">some meme text 2</p></div>
+          <div class="div3"><p class="text3">some meme text 3</p></div>
+          <div class="div4"><p class="text4">some meme text 4</p></div>
         </div>
-        <div class="switch-panel">
-          <label for="img1" id="text1"></label>
-          <label for="img2" id="text2"></label>
-          <label for="img3" id="text3"></label>
-          <label for="img4" id="text4"></label>
+        <div class="switch-panel"> 
+          <label for="img1">
+            <div class="clicked"></div>
+          </label>
+          <label for="img2">
+            <div class="clicked"></div>
+          </label>
+          <label for="img3">
+            <div class="clicked"></div>
+          </label>
+          <label for="img4">
+            <div class="clicked"></div>
+          </label>
         </div>
     </div>
 
