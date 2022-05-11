@@ -9,7 +9,6 @@ body {
   height: 100vh;
   background: linear-gradient(to top, black, cyan);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -63,7 +62,7 @@ body {
 }
 
 .slider-text p {
-  margin-left: 1rem;
+  margin-left: 3rem;
   color: #fff;
   font-weight: 600;
   font-size: 2rem;
