@@ -18,7 +18,6 @@ body {
   position: relative;
   width: 800px;
   overflow: hidden;
-  background-color: rgb(255, 133, 133);
   margin-bottom: 20px;
 }
 
@@ -32,6 +31,7 @@ body {
   width: 100%;
   transition: all 0.5s ease;
   margin-bottom: 2rem;
+  border-radius: 3%;
 }
 
 .slider input {
@@ -54,7 +54,6 @@ body {
 
 
 .info {
-  background-color: rgb(149, 255, 149);
   width: 800px;
   display: flex;
   padding: 0 1rem 1rem;
@@ -65,7 +64,6 @@ body {
 .slider-text {
   width: 100%;
   overflow: hidden;
-  background-color: rgb(141, 124, 252);
   display: flex;
   align-items: center;
   padding: 2rem 1rem 1rem;
@@ -79,7 +77,6 @@ body {
   font-weight: 600;
   font-size: 2rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-shadow: 0.2em 0.1em #2f363c;
 }
 
 .slider-text div {
@@ -102,7 +99,6 @@ body {
 }
 
 .switch-panel {
-  background-color: rgb(255, 238, 107);
   width: 30%;
   display: flex;
   justify-content: center;
@@ -122,11 +118,19 @@ body {
 
 .switch-panel label:hover {
   background: #fff;
+  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.8);
 }
 
 
 
-
+#img1:checked ~ .info .switch-panel label[for="img1"],
+#img2:checked ~ .info .switch-panel label[for="img2"],
+#img3:checked ~ .info .switch-panel label[for="img3"],
+#img4:checked ~ .info .switch-panel label[for="img4"] {
+  background-color: cyan;
+  border: none;
+  box-shadow: 0 0 1rem 0 rgba(255, 255, 255, 0.8);
+}
 
 
 
