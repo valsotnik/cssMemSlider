@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-size: 10px;
+  font-size: 62.5%;
 }
 
 body {
@@ -113,7 +113,7 @@ body {
   height: 2rem;
   width: 2rem;
   border-radius: 50%;
-  border: solid cyan 2px;
+  border: solid cyan 0.2rem;
 }
 
 .switch-panel label[for="img1"]:hover .btn1, 
